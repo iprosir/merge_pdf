@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nickkuk/tauri-plugin-fs/refs/heads/v2/schemas/schema.json",
+  "identifier": "default",
+  "description": "PDF合并工具默认权限配置",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "dialog:default",
+    "dialog:allow-open",
+    "dialog:allow-save",
+    "dialog:allow-message",
+    "dialog:allow-ask",
+    "fs:default",
+    "fs:allow-read",
+    "fs:allow-write",
+    "fs:allow-exists",
+    "fs:allow-mkdir",
+    "shell:default",
+    "shell:allow-open",
+    "opener:default",
+    {
+      "identifier": "fs:scope",
+      "allow": [
+        { "path": "**" }
+      ]
+    }
+  ]
+}
+

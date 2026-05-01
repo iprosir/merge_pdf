@@ -1,0 +1,42 @@
+# 构建产物
+/dist
+/src-tauri/target
+/node_modules
+
+# 环境配置
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+
+# 操作系统
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 日志
+*.log
+npm-debug.log*
+
+# 签名和密钥 - 严禁提交
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+*.keystore
+*.jks
+
+# Tauri 签名密钥
+*.tauri-key
+*.tauri-key.pub
+
+# Rust
+**/*.rs.bk
+
